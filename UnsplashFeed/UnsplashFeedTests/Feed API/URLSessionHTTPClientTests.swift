@@ -15,7 +15,7 @@ final class URLSessionHTTPClientTests: XCTestCase {
         URLProtocolStub.startInterceptingRequests()
         
         let url = anyURL()
-        let expectedError = anyError()
+        let expectedError = anyNSError()
         
         URLProtocolStub.stub(url, data: nil, response: nil, error: expectedError)
         

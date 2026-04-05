@@ -39,7 +39,7 @@ final class RemoteFeedLoaderTests: XCTestCase {
         let (sut, client) = makeSUT()
         
         expect(sut, completeWith: failure(.connectivityIssue)) {
-            client.complete(with: anyError(), at: 0)
+            client.complete(with: anyNSError(), at: 0)
         }
     }
     
@@ -110,12 +110,16 @@ final class RemoteFeedLoaderTests: XCTestCase {
     // MARK: - Helper
     
     private func makeSUT(
-        url: URL = URL(string: "https://a-url.com")!
+        url: URL = URL(string: "https://a-url.com")!,
+        file: StaticString = #filePath,
+        line: UInt = #line
     ) -> (sut: RemoteFeedLoader, client: HTTPClientSpy) {
         let client = HTTPClientSpy()
         let sut = RemoteFeedLoader(url: url, client: client)
-        trackMemoryLeaks(for: sut)
-        trackMemoryLeaks(for: client)
+        
+        trackMemoryLeaks(for: sut, file: file, line: line)
+        trackMemoryLeaks(for: client, file: file, line: line)
+        
         return (sut, client)
     }
     
