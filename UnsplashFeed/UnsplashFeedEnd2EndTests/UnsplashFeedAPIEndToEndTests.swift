@@ -40,7 +40,7 @@ final class UnsplashFeedAPIEndToEndTests: XCTestCase {
                 headerFields: nil
             )!,
             error: nil,
-            delay: 0.2
+            delay: 3.6 // averaged delay as due to the manual experiments
         )
         
         let session = makeInterceptedSession()
@@ -235,7 +235,7 @@ extension UnsplashFeedAPIEndToEndTests {
             return request
         }
         
-        static func stub(data: Data, response: URLResponse, error: Error?, delay: TimeInterval = 0) {
+        static func stub(data: Data, response: URLResponse, error: Error?, delay: TimeInterval = 6) {
             stub = Stub(data: data, response: response, error: error, delay: delay)
         }
         
