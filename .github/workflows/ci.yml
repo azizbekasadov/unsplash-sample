@@ -27,8 +27,11 @@ jobs:
 
       - name: Build and test
         run: |
+          PROJECT_PATH=$(find . -name "*.xcodeproj" | head -n 1)
+          echo "Using project: $PROJECT_PATH"
+          
           xcodebuild \
-            -project "./UnsplashFeed.xcodeproj" \
+            -project "$PROJECT_PATH" \
             -scheme "UnsplashFeed_CI" \
             -destination "platform=macOS" \
             CODE_SIGN_IDENTITY="" \
