@@ -1,5 +1,7 @@
 # Sample Unsplash App Case Study
 
+[![CI](https://github.com/azizbekasadov/unsplash-sample/actions/workflows/ci.yml/badge.svg?branch=master&event=push)](https://github.com/azizbekasadov/unsplash-sample/actions/workflows/ci.yml)
+
 ## Unsplash Feed Feature Specs
 
 ### Story: User requests to see the photo feed
