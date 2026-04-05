@@ -8,10 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5D35A0F22F7C025200E81D9C /* UnsplashFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D35A0E82F7C025200E81D9C /* UnsplashFeed.framework */; };
+		5DE259F92F82F72E009A97F6 /* UnsplashFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D35A0E82F7C025200E81D9C /* UnsplashFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5D35A0F32F7C025200E81D9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D35A0DF2F7C025200E81D9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D35A0E72F7C025200E81D9C;
+			remoteInfo = UnsplashFeed;
+		};
+		5DE259FA2F82F72E009A97F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5D35A0DF2F7C025200E81D9C /* Project object */;
 			proxyType = 1;
@@ -23,6 +31,10 @@
 /* Begin PBXFileReference section */
 		5D35A0E82F7C025200E81D9C /* UnsplashFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnsplashFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D35A0F12F7C025200E81D9C /* UnsplashFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnsplashFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE259F02F82F6BE009A97F6 /* UnsplashFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnsplashFeed.xctestplan; sourceTree = "<group>"; };
+		5DE259F52F82F72E009A97F6 /* UnsplashFeedEnd2EndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnsplashFeedEnd2EndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE259FF2F82F773009A97F6 /* UnsplashFeedEnd2EndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnsplashFeedEnd2EndTests.xctestplan; sourceTree = "<group>"; };
+		5DE25A002F82F7E6009A97F6 /* UnsplashFeed_CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnsplashFeed_CI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +46,11 @@
 		5D35A0F52F7C025200E81D9C /* UnsplashFeedTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UnsplashFeedTests;
+			sourceTree = "<group>";
+		};
+		5DE259F62F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = UnsplashFeedEnd2EndTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -54,14 +71,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DE259F22F82F72E009A97F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE259F92F82F72E009A97F6 /* UnsplashFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5D35A0DE2F7C025200E81D9C = {
 			isa = PBXGroup;
 			children = (
+				5DE25A002F82F7E6009A97F6 /* UnsplashFeed_CI.xctestplan */,
+				5DE259FF2F82F773009A97F6 /* UnsplashFeedEnd2EndTests.xctestplan */,
+				5DE259F02F82F6BE009A97F6 /* UnsplashFeed.xctestplan */,
 				5D35A0EA2F7C025200E81D9C /* UnsplashFeed */,
 				5D35A0F52F7C025200E81D9C /* UnsplashFeedTests */,
+				5DE259F62F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */,
 				5D35A0E92F7C025200E81D9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +100,7 @@
 			children = (
 				5D35A0E82F7C025200E81D9C /* UnsplashFeed.framework */,
 				5D35A0F12F7C025200E81D9C /* UnsplashFeedTests.xctest */,
+				5DE259F52F82F72E009A97F6 /* UnsplashFeedEnd2EndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +164,29 @@
 			productReference = 5D35A0F12F7C025200E81D9C /* UnsplashFeedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5DE259F42F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DE259FC2F82F72E009A97F6 /* Build configuration list for PBXNativeTarget "UnsplashFeedEnd2EndTests" */;
+			buildPhases = (
+				5DE259F12F82F72E009A97F6 /* Sources */,
+				5DE259F22F82F72E009A97F6 /* Frameworks */,
+				5DE259F32F82F72E009A97F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DE259FB2F82F72E009A97F6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5DE259F62F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */,
+			);
+			name = UnsplashFeedEnd2EndTests;
+			packageProductDependencies = (
+			);
+			productName = UnsplashFeedEnd2EndTests;
+			productReference = 5DE259F52F82F72E009A97F6 /* UnsplashFeedEnd2EndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +204,9 @@
 					5D35A0F02F7C025200E81D9C = {
 						CreatedOnToolsVersion = 26.3;
 						LastSwiftMigration = 2630;
+					};
+					5DE259F42F82F72E009A97F6 = {
+						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
@@ -170,6 +226,7 @@
 			targets = (
 				5D35A0E72F7C025200E81D9C /* UnsplashFeed */,
 				5D35A0F02F7C025200E81D9C /* UnsplashFeedTests */,
+				5DE259F42F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +240,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5D35A0EF2F7C025200E81D9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE259F32F82F72E009A97F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -206,6 +270,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DE259F12F82F72E009A97F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,6 +284,11 @@
 			isa = PBXTargetDependency;
 			target = 5D35A0E72F7C025200E81D9C /* UnsplashFeed */;
 			targetProxy = 5D35A0F32F7C025200E81D9C /* PBXContainerItemProxy */;
+		};
+		5DE259FB2F82F72E009A97F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D35A0E72F7C025200E81D9C /* UnsplashFeed */;
+			targetProxy = 5DE259FA2F82F72E009A97F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +553,58 @@
 			};
 			name = Release;
 		};
+		5DE259FD2F82F72E009A97F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7FCTC6DRE7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azizbekasadov.UnsplashFeedEnd2EndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,7";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		5DE259FE2F82F72E009A97F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7FCTC6DRE7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azizbekasadov.UnsplashFeedEnd2EndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,7";
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -503,6 +631,15 @@
 			buildConfigurations = (
 				5D35A0FE2F7C025200E81D9C /* Debug */,
 				5D35A0FF2F7C025200E81D9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DE259FC2F82F72E009A97F6 /* Build configuration list for PBXNativeTarget "UnsplashFeedEnd2EndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DE259FD2F82F72E009A97F6 /* Debug */,
+				5DE259FE2F82F72E009A97F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
