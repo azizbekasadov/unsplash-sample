@@ -8,7 +8,7 @@
 import XCTest
 import Foundation
 
-extension XCTestCase {
+public extension XCTestCase {
     func trackMemoryLeaks(
         for entity: AnyObject,
         file: StaticString = #filePath,

@@ -7,22 +7,22 @@
 
 import Foundation
 
-func anyURL() -> URL {
+public func anyURL() -> URL {
     URL(string: "https://a-url.com")!
 }
 
-func anyNSError() -> NSError {
+public func anyNSError() -> NSError {
     NSError(domain: "any error", code: -1)
 }
 
-func anyData() -> Data {
+public func anyData() -> Data {
     Data("any bytes".utf8)
 }
 
-func anyHTTPResponse(with statusCode: Int = 200) -> HTTPURLResponse {
+public func anyHTTPResponse(with statusCode: Int = 200) -> HTTPURLResponse {
     HTTPURLResponse(url: anyURL(), statusCode: statusCode, httpVersion: nil, headerFields: nil)!
 }
 
-func anyURLResponse() -> URLResponse {
+public func anyURLResponse() -> URLResponse {
     URLResponse(url: anyURL(), mimeType: nil, expectedContentLength: 0, textEncodingName: nil)
 }

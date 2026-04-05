@@ -28,6 +28,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5DE25A1A2F82F888009A97F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE25A1F2F82F88C009A97F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5D35A0E82F7C025200E81D9C /* UnsplashFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UnsplashFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D35A0F12F7C025200E81D9C /* UnsplashFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnsplashFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +60,17 @@
 		5DE25A002F82F7E6009A97F6 /* UnsplashFeed_CI.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UnsplashFeed_CI.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5DE25A262F82F91B009A97F6 /* Exceptions for "UnsplashFeedTests" folder in "UnsplashFeedEnd2EndTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/MemoryLeaksTracker.swift,
+				Helpers/SharedHelpers.swift,
+			);
+			target = 5DE259F42F82F72E009A97F6 /* UnsplashFeedEnd2EndTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5D35A0EA2F7C025200E81D9C /* UnsplashFeed */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -45,6 +79,9 @@
 		};
 		5D35A0F52F7C025200E81D9C /* UnsplashFeedTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5DE25A262F82F91B009A97F6 /* Exceptions for "UnsplashFeedTests" folder in "UnsplashFeedEnd2EndTests" target */,
+			);
 			path = UnsplashFeedTests;
 			sourceTree = "<group>";
 		};
@@ -148,6 +185,7 @@
 				5D35A0ED2F7C025200E81D9C /* Sources */,
 				5D35A0EE2F7C025200E81D9C /* Frameworks */,
 				5D35A0EF2F7C025200E81D9C /* Resources */,
+				5DE25A1A2F82F888009A97F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +209,7 @@
 				5DE259F12F82F72E009A97F6 /* Sources */,
 				5DE259F22F82F72E009A97F6 /* Frameworks */,
 				5DE259F32F82F72E009A97F6 /* Resources */,
+				5DE25A1F2F82F88C009A97F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
