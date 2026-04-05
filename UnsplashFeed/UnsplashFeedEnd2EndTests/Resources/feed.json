@@ -1,0 +1,50 @@
+[
+  {
+    "id": "31EC802C-F4EC-40AE-BE62-DA5F70892C72",
+    "created_at": "2026-03-31T14:56:08Z",
+    "width": 1,
+    "height": 1,
+    "urls": {
+      "raw": "http://a-url.com",
+      "full": "http://a-url.com",
+      "regular": "http://a-url.com",
+      "small": "http://a-url.com",
+      "thumb": "http://a-url.com"
+    },
+    "links": {
+      "html": "http://a-url.com",
+      "download": "http://a-url.com",
+      "download_location": "http://a-url.com"
+    },
+    "user": {
+      "id": "C733EA41-6E4C-4900-920E-FC734BD88B36",
+      "username": "any username",
+      "name": "any name"
+    }
+  },
+  {
+    "id": "D222729D-EFA7-41EB-B997-13AC4F14C24F",
+    "description": "a description",
+    "alt_description": "alt description",
+    "created_at": "2026-03-31T14:56:08Z",
+    "width": 1,
+    "height": 1,
+    "urls": {
+      "raw": "http://another-url.com",
+      "full": "http://another-url.com",
+      "regular": "http://another-url.com",
+      "small": "http://another-url.com",
+      "thumb": "http://another-url.com"
+    },
+    "links": {
+      "html": "http://another-url.com",
+      "download": "http://another-url.com",
+      "download_location": "http://another-url.com"
+    },
+    "user": {
+      "id": "D0E8D005-679C-4609-9302-B9302D143BC7",
+      "username": "any username",
+      "name": "any name"
+    }
+  }
+]

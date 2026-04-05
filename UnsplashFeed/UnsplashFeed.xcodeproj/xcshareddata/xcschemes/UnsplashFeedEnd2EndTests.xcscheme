@@ -6,22 +6,6 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D35A0E72F7C025200E81D9C"
-               BuildableName = "UnsplashFeed.framework"
-               BlueprintName = "UnsplashFeed"
-               ReferencedContainer = "container:UnsplashFeed.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -30,7 +14,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UnsplashFeed.xctestplan"
+            reference = "container:UnsplashFeedEnd2EndTests.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -40,9 +24,9 @@
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D35A0F02F7C025200E81D9C"
-               BuildableName = "UnsplashFeedTests.xctest"
-               BlueprintName = "UnsplashFeedTests"
+               BlueprintIdentifier = "5DE259F42F82F72E009A97F6"
+               BuildableName = "UnsplashFeedEnd2EndTests.xctest"
+               BlueprintName = "UnsplashFeedEnd2EndTests"
                ReferencedContainer = "container:UnsplashFeed.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -65,15 +49,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D35A0E72F7C025200E81D9C"
-            BuildableName = "UnsplashFeed.framework"
-            BlueprintName = "UnsplashFeed"
-            ReferencedContainer = "container:UnsplashFeed.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

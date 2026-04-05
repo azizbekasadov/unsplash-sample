@@ -15,11 +15,30 @@ public final class URLSessionClient: HTTPClient {
     }
     
     public func get(from url: URL, completion: @escaping (HTTPClient.Result) -> Void) {
-        session.dataTask(with: url) { data, response, error in
+        session.dataTask(with: url) { [weak self] data, response, error in
+            guard self != nil else { return }
+            
             if let error {
                 completion(.failure(error))
+            } else if let data, let response = response as? HTTPURLResponse {
+                completion(.success((data, response)))
+            } else {
+                completion(.failure(UnexpectedValuesRepresentationError.unknownError))
             }
         }
         .resume()
+    }
+    
+    // MARK: - Implementationn Details
+    
+    private enum UnexpectedValuesRepresentationError: Error, CustomStringConvertible {
+        case unknownError
+        
+        var description: String {
+            switch self {
+            case .unknownError:
+                return "Unknown error in the values representation from the data in response"
+            }
+        }
     }
 }

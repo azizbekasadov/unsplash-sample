@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "6FF5D6EE-AA54-40AD-B6CD-AD83EC7CDD4A",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true,
+    "testExecutionOrdering" : "random",
+    "threadSanitizerEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UnsplashFeed.xcodeproj",
+        "identifier" : "5DE259F42F82F72E009A97F6",
+        "name" : "UnsplashFeedEnd2EndTests"
+      }
+    }
+  ],
+  "version" : 1
+}

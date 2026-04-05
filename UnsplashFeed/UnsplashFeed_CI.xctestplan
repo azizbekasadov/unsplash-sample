@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "614785E5-26B3-46E5-B4D4-9C3CBFBE4FD5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "performanceAntipatternCheckerEnabled" : true,
+    "testExecutionOrdering" : "random"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UnsplashFeed.xcodeproj",
+        "identifier" : "5D35A0F02F7C025200E81D9C",
+        "name" : "UnsplashFeedTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UnsplashFeed.xcodeproj",
+        "identifier" : "5DE259F42F82F72E009A97F6",
+        "name" : "UnsplashFeedEnd2EndTests"
+      }
+    }
+  ],
+  "version" : 1
+}

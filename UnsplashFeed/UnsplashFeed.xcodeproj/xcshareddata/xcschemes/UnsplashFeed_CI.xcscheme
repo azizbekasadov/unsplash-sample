@@ -30,23 +30,10 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:UnsplashFeed.xctestplan"
+            reference = "container:UnsplashFeed_CI.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D35A0F02F7C025200E81D9C"
-               BuildableName = "UnsplashFeedTests.xctest"
-               BlueprintName = "UnsplashFeedTests"
-               ReferencedContainer = "container:UnsplashFeed.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
